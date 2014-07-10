@@ -1,4 +1,4 @@
 Qt-Projects
 ===========
 
-Qt Applications Repository
+Cute Applications Repository
