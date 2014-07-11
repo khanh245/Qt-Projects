@@ -1,5 +1,6 @@
 import QtQuick 2.2
 import QtQuick.Controls 1.1
+import QtQuick.Layouts 1.1
 
 ApplicationWindow {
     id: wnd_main
@@ -18,7 +19,7 @@ ApplicationWindow {
         }
     }
 
-    Grid {
+    GridLayout {
         columns: 2
         columnSpacing: 10
 
@@ -26,23 +27,38 @@ ApplicationWindow {
         rowSpacing: 5
 
         Button {
+            Layout.row: 0
+            Layout.column: 0
             text: qsTr("1st row, 1st col")
         }
+
         Button {
+            Layout.row: 0
+            Layout.column: 1
             text: qsTr("1st row, 2nd col")
         }
 
         Button {
+            Layout.row: 1
+            Layout.column: 0
             text: qsTr("2nd row, 1st col")
         }
+
         Button {
+            Layout.row: 1
+            Layout.column: 1
             text: qsTr("2nd row, 2nd col")
         }
 
         Button {
+            Layout.row: 2
+            Layout.column: 0
             text: qsTr("3rd row, 1st col")
         }
+
         Button {
+            Layout.row: 2
+            Layout.column: 1
             text: qsTr("3rd row, 2nd col")
         }
     }
